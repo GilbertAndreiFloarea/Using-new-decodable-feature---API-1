@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		2CBE1DA42289F2680082567D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE1DA32289F2680082567D /* AppDelegate.swift */; };
-		2CBE1DA62289F2680082567D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE1DA52289F2680082567D /* ViewController.swift */; };
+		2CBE1DA62289F2680082567D /* HolidayTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE1DA52289F2680082567D /* HolidayTVC.swift */; };
 		2CBE1DA92289F2680082567D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBE1DA72289F2680082567D /* Main.storyboard */; };
 		2CBE1DAB2289F26A0082567D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CBE1DAA2289F26A0082567D /* Assets.xcassets */; };
 		2CBE1DAE2289F26A0082567D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBE1DAC2289F26A0082567D /* LaunchScreen.storyboard */; };
+		2CBE1DB62289F5010082567D /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE1DB52289F5010082567D /* Holiday.swift */; };
+		2CBE1DB82289F60C0082567D /* HolidayRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE1DB72289F60C0082567D /* HolidayRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2CBE1DA02289F2680082567D /* Using new decodable feature - API-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Using new decodable feature - API-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBE1DA32289F2680082567D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2CBE1DA52289F2680082567D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2CBE1DA52289F2680082567D /* HolidayTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayTVC.swift; sourceTree = "<group>"; };
 		2CBE1DA82289F2680082567D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CBE1DAA2289F26A0082567D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CBE1DAD2289F26A0082567D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CBE1DAF2289F26A0082567D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CBE1DB52289F5010082567D /* Holiday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holiday.swift; sourceTree = "<group>"; };
+		2CBE1DB72289F60C0082567D /* HolidayRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				2CBE1DA32289F2680082567D /* AppDelegate.swift */,
-				2CBE1DA52289F2680082567D /* ViewController.swift */,
+				2CBE1DA52289F2680082567D /* HolidayTVC.swift */,
+				2CBE1DB52289F5010082567D /* Holiday.swift */,
+				2CBE1DB72289F60C0082567D /* HolidayRequest.swift */,
 				2CBE1DA72289F2680082567D /* Main.storyboard */,
 				2CBE1DAA2289F26A0082567D /* Assets.xcassets */,
 				2CBE1DAC2289F26A0082567D /* LaunchScreen.storyboard */,
@@ -96,6 +102,7 @@
 				TargetAttributes = {
 					2CBE1D9F2289F2680082567D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -135,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CBE1DA62289F2680082567D /* ViewController.swift in Sources */,
+				2CBE1DB62289F5010082567D /* Holiday.swift in Sources */,
+				2CBE1DA62289F2680082567D /* HolidayTVC.swift in Sources */,
+				2CBE1DB82289F60C0082567D /* HolidayRequest.swift in Sources */,
 				2CBE1DA42289F2680082567D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +300,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "GilbertAndreiFloarea.Using-new-decodable-feature---API-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -309,7 +318,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "GilbertAndreiFloarea.Using-new-decodable-feature---API-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
